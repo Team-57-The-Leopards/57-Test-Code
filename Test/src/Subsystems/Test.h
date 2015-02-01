@@ -13,7 +13,9 @@ public:
 	Test();
 	void InitDefaultCommand();
 	void RunStuff();
+	void Correction();
 	CANTalon *frontleftm;
+	CANTalon *frontrightm;
 	SmartDashboard *ds;
 };
 
