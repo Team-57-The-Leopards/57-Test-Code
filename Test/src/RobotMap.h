@@ -45,7 +45,7 @@ static const uint32_t ch_RightIntake = 10;
 //Analog IO
 
 // Joysticks
-static const uint32_t ch_driveStick = 1;
+static const uint32_t ch_DriveStick = 1;
 static const uint32_t ch_boxingStick = 2;
 
 //Buttons

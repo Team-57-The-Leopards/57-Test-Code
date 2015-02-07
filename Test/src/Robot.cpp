@@ -7,6 +7,7 @@ class Robot: public IterativeRobot
 {
 private:
 	Command *autonomousCommand;
+	Command *runTest;
 	LiveWindow *lw;
 	void RobotInit()
 	{
@@ -47,7 +48,6 @@ private:
 	void TeleopPeriodic()
 	{
 		Scheduler::GetInstance()->Run();
-		CommandBase::test->InitDefaultCommand();
 	}
 
 	void TestPeriodic()

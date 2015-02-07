@@ -9,7 +9,8 @@ private:
 
 public:
 	OI();
-
+	Joystick *driveStick;
+	Joystick *GetDriveJoystick();
 };
 
 #endif
