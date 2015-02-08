@@ -7,6 +7,7 @@ Test::Test() :
 	frontleftm = new CANTalon(ch_FrontLeftM);
 	frontrightm = new CANTalon(ch_FrontRightM);
 	backleftm = new CANTalon(ch_BackLeftM);
+
 	backrightm =  new CANTalon(ch_BackRightM);
 	drive = new RobotDrive(frontleftm, backleftm, frontrightm, backrightm);
 	drive->SetSafetyEnabled(kMotorSafety);
@@ -23,8 +24,8 @@ void Test::InitDefaultCommand()
 void Test::RunStuff(){
 	//ds->init();
 	frontleftm ->Set(1);
-	frontrightm ->Set(1);
-	backrightm ->Set(1);
+	frontrightm ->Set(-1);
+	backrightm ->Set(-1);
 	backleftm ->Set(1);
 	//int leftFrontEncPinA = frontleftm -> GetPinStateQuadA();
 	//ds->PutNumber("Enc Value", leftFrontEncPinA);
